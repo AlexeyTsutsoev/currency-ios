@@ -56,38 +56,42 @@ struct AnimatedButton<Label>: View where Label: View {
     }
 }
 
-// MARK: - Preview
+// MARK: - Previews
 
-#Preview {
-    return VStack(spacing: .large) {
-        AnimatedButton {
-            Typography("DEFAULT")
-        } onPress: {
-            print("TEST")
-        }
-
-        AnimatedButton(disabled: true) {
-            Typography("DISABLED")
-        } onPress: {
-            print("TEST")
-        }
-
-        AnimatedButton(isLoading: true) {
-            Typography("LOADING")
-        } onPress: {
-            print("TEST")
-        }
-
-        AnimatedButton {
-            Typography("CUSTOM")
-                .padding(by: .medium)
-                .frame(minWidth: 0, maxWidth: .infinity)
-                .background(Color(.accent))
-                .foregroundColor(Color(.typography))
-                .clipShape(Capsule())
-        } onPress: {
-            print("TEST")
-        }
-
+#Preview("Default") {
+    AnimatedButton {
+        Typography("DEFAULT")
+    } onPress: {
+        print("TEST")
     }
+}
+
+#Preview("Disabled") {
+    AnimatedButton(disabled: true) {
+        Typography("DISABLED")
+    } onPress: {
+        print("TEST")
+    }
+}
+
+#Preview("Loading") {
+    AnimatedButton(isLoading: true) {
+        Typography("LOADING")
+    } onPress: {
+        print("TEST")
+    }
+}
+
+#Preview("Custom") {
+    AnimatedButton {
+        Typography("CUSTOM")
+            .padding(by: .medium)
+            .frame(minWidth: 0, maxWidth: .infinity)
+            .background(Color(.accent))
+            .foregroundColor(Color(.typography))
+            .clipShape(Capsule())
+    } onPress: {
+        print("TEST")
+    }
+    .padding()
 }

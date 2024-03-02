@@ -45,16 +45,16 @@ struct FlatList<Content, T: Identifiable>: View where Content: View {
     }
 }
 
-// MARK: - Preview
+// MARK: - Previews
 
-#Preview {
-    return VStack {
-        FlatList(mockListItems) { item in
-            Typography(item.text)
-        }
+#Preview("Empty") {
+    FlatList(mockEmptyList) { item in
+        Typography(item.text)
+    }
+}
 
-        FlatList(mockEmptyList) { item in
-            Typography(item.text)
-        }
+#Preview("Filled") {
+    FlatList(mockListItems) { item in
+        Typography(item.text)
     }
 }
