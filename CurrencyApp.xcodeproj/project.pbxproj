@@ -227,6 +227,7 @@
 			mainGroup = 8D370A912B93441A006D350A;
 			packageReferences = (
 				8D370ACB2B935266006D350A /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				8D370AD02B935415006D350A /* XCRemoteSwiftPackageReference "Resolver" */,
 			);
 			productRefGroup = 8D370A9B2B93441A006D350A /* Products */;
 			projectDirPath = "";
@@ -608,6 +609,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.54.0;
+			};
+		};
+		8D370AD02B935415006D350A /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
