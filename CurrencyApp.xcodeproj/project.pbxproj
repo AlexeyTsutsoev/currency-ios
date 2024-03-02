@@ -158,7 +158,6 @@
 				8D370AD72B935E08006D350A /* Screens */,
 				8D370AD12B935954006D350A /* Application */,
 				8D370AD42B935A10006D350A /* Navigation */,
-				8D370AA52B93441B006D350A /* Preview Content */,
 				8D370AD32B935982006D350A /* Resources */,
 				8D370AD22B93597B006D350A /* Shared */,
 			);
@@ -216,6 +215,7 @@
 		8D370AD32B935982006D350A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8D370AA52B93441B006D350A /* Preview Content */,
 				8D370AA32B93441B006D350A /* Assets.xcassets */,
 				8D370ADC2B939175006D350A /* Colors.xcassets */,
 				8DCD9A4A2B93BDDA002810ED /* Localizable.xcstrings */,
