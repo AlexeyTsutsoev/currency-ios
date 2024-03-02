@@ -2,10 +2,24 @@
   "sourceLanguage" : "en",
   "strings" : {
     "Add Item" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Artikel hinzufügen"
+          }
+        }
+      }
     },
     "Item at %@" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Artikel bei %@"
+          }
+        }
+      }
     },
     "List is empty." : {
       "extractionState" : "manual",
@@ -14,6 +28,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Liste ist leer."
+          }
+        }
+      }
+    },
+    "Not Implemented" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nicht implementiert"
           }
         }
       }
@@ -30,7 +55,14 @@
       }
     },
     "Select an item" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wählen Sie einen Artikel aus"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
