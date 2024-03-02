@@ -101,6 +101,7 @@
 		8DCD9A582B93D805002810ED /* ExchangeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeScreen.swift; sourceTree = "<group>"; };
 		8DCD9A5A2B93D834002810ED /* HistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
 		8DCD9A5D2B93DADE002810ED /* NavigatorViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorViewModelTests.swift; sourceTree = "<group>"; };
+		8DCD9A5F2B93E79A002810ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +194,7 @@
 		8D370AD12B935954006D350A /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				8DCD9A5F2B93E79A002810ED /* Info.plist */,
 				8D370ACF2B935339006D350A /* .swiftlint.yml */,
 				8D370A9D2B93441A006D350A /* CurrencyAppApp.swift */,
 				8D370A9F2B93441B006D350A /* ContentView.swift */,
@@ -742,13 +744,17 @@
 		8D370AC12B93441B006D350A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_KEY = fca_live_4LuU3I3wCTk8DhwbQJAVRceISqONM2mNs5kLgvCy;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_API_URL = "https://api.freecurrencyapi.com/v1";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CurrencyApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CurrencyApp/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CurrencyApp/Application/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -770,13 +776,17 @@
 		8D370AC22B93441B006D350A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_KEY = fca_live_4LuU3I3wCTk8DhwbQJAVRceISqONM2mNs5kLgvCy;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_API_URL = "https://api.freecurrencyapi.com/v1";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CurrencyApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CurrencyApp/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CurrencyApp/Application/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
