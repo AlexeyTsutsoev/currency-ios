@@ -38,6 +38,8 @@
 		8DCD9A522B93D2E6002810ED /* NavigationRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A512B93D2E6002810ED /* NavigationRoute.swift */; };
 		8DCD9A542B93D3F9002810ED /* NavigatorViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A532B93D3F9002810ED /* NavigatorViewModelProtocol.swift */; };
 		8DCD9A572B93D598002810ED /* NavigatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A562B93D598002810ED /* NavigatorViewModel.swift */; };
+		8DCD9A592B93D805002810ED /* ExchangeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A582B93D805002810ED /* ExchangeScreen.swift */; };
+		8DCD9A5B2B93D834002810ED /* HistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A5A2B93D834002810ED /* HistoryScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		8DCD9A512B93D2E6002810ED /* NavigationRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoute.swift; sourceTree = "<group>"; };
 		8DCD9A532B93D3F9002810ED /* NavigatorViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorViewModelProtocol.swift; sourceTree = "<group>"; };
 		8DCD9A562B93D598002810ED /* NavigatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorViewModel.swift; sourceTree = "<group>"; };
+		8DCD9A582B93D805002810ED /* ExchangeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeScreen.swift; sourceTree = "<group>"; };
+		8DCD9A5A2B93D834002810ED /* HistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,6 +397,8 @@
 		8DCD9A4E2B93D274002810ED /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8DCD9A582B93D805002810ED /* ExchangeScreen.swift */,
+				8DCD9A5A2B93D834002810ED /* HistoryScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -540,6 +546,7 @@
 				8D370AEC2B9397B3006D350A /* VStack+spacing.swift in Sources */,
 				8DCD9A502B93D293002810ED /* Navigator.swift in Sources */,
 				8D370ADF2B9394EC006D350A /* CornerVariant.swift in Sources */,
+				8DCD9A592B93D805002810ED /* ExchangeScreen.swift in Sources */,
 				8D370AE72B9396F8006D350A /* View+padding.swift in Sources */,
 				8D370AA02B93441B006D350A /* ContentView.swift in Sources */,
 				8DCD9A542B93D3F9002810ED /* NavigatorViewModelProtocol.swift in Sources */,
@@ -551,6 +558,7 @@
 				8D370A9E2B93441A006D350A /* CurrencyAppApp.swift in Sources */,
 				8D370AE92B939734006D350A /* View+fill.swift in Sources */,
 				8D370B062B93A734006D350A /* ErrorView.swift in Sources */,
+				8DCD9A5B2B93D834002810ED /* HistoryScreen.swift in Sources */,
 				8D370AFA2B939D6A006D350A /* Typography.swift in Sources */,
 				8DCD9A572B93D598002810ED /* NavigatorViewModel.swift in Sources */,
 				8D370B092B93AB2D006D350A /* FlatList.swift in Sources */,

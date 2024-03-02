@@ -14,9 +14,9 @@ extension NavigationRoute: View {
     var body: some View {
         switch self {
         case .exchange:
-            Text("test")
+            ExchangeScreen()
         case .history:
-            Text("Test 1")
+            HistoryScreen()
         }
     }
 }
