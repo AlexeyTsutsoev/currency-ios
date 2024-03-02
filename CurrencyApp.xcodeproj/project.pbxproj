@@ -40,6 +40,7 @@
 		8DCD9A572B93D598002810ED /* NavigatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A562B93D598002810ED /* NavigatorViewModel.swift */; };
 		8DCD9A592B93D805002810ED /* ExchangeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A582B93D805002810ED /* ExchangeScreen.swift */; };
 		8DCD9A5B2B93D834002810ED /* HistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A5A2B93D834002810ED /* HistoryScreen.swift */; };
+		8DCD9A5E2B93DADE002810ED /* NavigatorViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A5D2B93DADE002810ED /* NavigatorViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		8DCD9A562B93D598002810ED /* NavigatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorViewModel.swift; sourceTree = "<group>"; };
 		8DCD9A582B93D805002810ED /* ExchangeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeScreen.swift; sourceTree = "<group>"; };
 		8DCD9A5A2B93D834002810ED /* HistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
+		8DCD9A5D2B93DADE002810ED /* NavigatorViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		8D370AAF2B93441B006D350A /* CurrencyAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				8DCD9A5C2B93DA9E002810ED /* Navigation */,
 				8D370AF02B939926006D350A /* Theme */,
 			);
 			path = CurrencyAppTests;
@@ -403,6 +406,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		8DCD9A5C2B93DA9E002810ED /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				8DCD9A5D2B93DADE002810ED /* NavigatorViewModelTests.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -575,6 +586,7 @@
 			files = (
 				8D370AF22B939952006D350A /* FontTests.swift in Sources */,
 				8D370AF42B939B8C006D350A /* PaddingTests.swift in Sources */,
+				8DCD9A5E2B93DADE002810ED /* NavigatorViewModelTests.swift in Sources */,
 				8D370AF62B939C47006D350A /* CornerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
