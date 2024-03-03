@@ -1,6 +1,10 @@
 import Observation
 
 @Observable final class MockMainViewModel: MainViewModelProtocol {
+    var amount = ""
+
+    var targetCurrency: Currency?
+
     var isLoading = false
 
     var isExchanging = false
@@ -10,7 +14,7 @@ import Observation
     var baseCurrency: Currency?
     var currencies: [Currency] = []
 
-    var exchangeResult: [String: Double] = [:]
+    var exchangeResult: Double = 1.0
 
     let onPressHistory: () -> Void = {
         print("History icon pressed")
@@ -44,13 +48,7 @@ import Observation
 
                 try await Task.sleep(seconds: 2.0)
 
-                self.exchangeResult = [
-                    "CHF": 0.0096283304,
-                    "CNY": 0.0784452112,
-                    "EUR": 0.0100548387,
-                    "GBP": 0.0086174052,
-                    "RUB": 1
-                ]
+                self.exchangeResult = 0.0096283304
             } catch {
                 print(error.localizedDescription)
                 self.hasError = true

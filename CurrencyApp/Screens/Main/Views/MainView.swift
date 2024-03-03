@@ -6,6 +6,7 @@ struct MainView: View {
     // MARK: - States
 
     @State private var mainVM: MainViewModelProtocol
+    @FocusState private var focused: Int?
 
     // MARK: - Inits
 
@@ -37,35 +38,45 @@ struct MainView: View {
                 // MARK: Main Layout
 
                 Form {
+                    Section("Enter amount") {
+                        TextField("Enter amount", text: $mainVM.amount)
+                            .keyboardType(.numberPad)
+                            .focused($focused, equals: 1)
+                    }
+
                     if mainVM.baseCurrency != nil {
                         Picker(selection: $mainVM.baseCurrency) {
                             ForEach(mainVM.currencies, id: \.symbol) { currency in
                                 Typography(currency.name).tag(currency as Currency?)
                             }
                         } label: {
-                            Typography("Select Currency")
+                            Typography("Select target currency")
+                        }
+                    } else {
+                        Typography("There are no selected currencies")
+                    }
+
+                    if mainVM.targetCurrency != nil {
+                        Picker(selection: $mainVM.targetCurrency) {
+                            ForEach(mainVM.currencies, id: \.symbol) { currency in
+                                Typography(currency.name).tag(currency as Currency?)
+                            }
+                        } label: {
+                            Typography("Select base currency")
                         }
                     } else {
                         Typography("There are no selected currencies")
                     }
 
                     Section(mainVM.baseCurrency?.name ?? "There are no selected currencies") {
-                        VStack {
-                            ForEach(mainVM.exchangeResult.sorted(by: >), id: \.key) { pair in
-                                HStack {
-                                    Typography(pair.key)
-                                    Typography(String(pair.value))
-                                }
-                                .horizontalFill(alignment: .leading)
-                            }
-                        }
+                        Typography(String(mainVM.exchangeResult))
                     }
-
                 }
 
                 AnimatedButton(isLoading: mainVM.isExchanging) {
                     Typography("Exchange")
                 } onPress: {
+                    focused = nil
                     mainVM.exchange()
                 }
             }
@@ -85,6 +96,12 @@ struct MainView: View {
                     .onTapGesture {
                         mainVM.onPressHistory()
                     }
+            }
+
+            ToolbarItem(placement: .keyboard) {
+                Button("Done") {
+                    focused = nil
+                }
             }
         }
     }

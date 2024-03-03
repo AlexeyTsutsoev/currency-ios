@@ -31,13 +31,7 @@ struct HistoryView: View {
 
                 Divider()
 
-                ForEach(item.result.sorted(by: >), id: \.key) { pair in
-                    HStack {
-                        Typography(pair.key)
-                        Typography(String(pair.value))
-                    }
-                    .horizontalFill(alignment: .leading)
-                }
+                Typography("Result \(String(format: "%.2f", item.result))")
 
             }
             .padding()
