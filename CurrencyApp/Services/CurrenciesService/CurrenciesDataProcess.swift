@@ -10,9 +10,8 @@ class CurrenciesDataProcess: CurrenciesDataProcessProtocol {
     // MARK: - Open methods
 
     func currencies(data: Data) throws -> [Currency] {
-        return try decoder.decoder.decode(CurrenciesResponse.self, from: data).data.map {
-            _, value in
-            return Currency(symbol: value.symbol, name: value.name)
+        return try decoder.decoder.decode(CurrenciesResponse.self, from: data).data.map { _, value in
+            return Currency(symbol: value.code, name: value.name)
         }
     }
 }

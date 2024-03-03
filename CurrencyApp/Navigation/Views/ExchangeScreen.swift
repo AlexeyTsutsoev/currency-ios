@@ -1,11 +1,9 @@
 import SwiftUI
 
 struct ExchangeScreen: View {
-    var body: some View {
-        Typography("Not Implemented")
-    }
-}
+    @Environment(\.modelContext) private var modelContext
 
-#Preview {
-    ExchangeScreen()
+    var body: some View {
+        MainView(mainVM: MainViewModel(modelContext: modelContext))
+    }
 }

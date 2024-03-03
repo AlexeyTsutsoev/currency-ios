@@ -20,7 +20,7 @@ class NetworkService: NetworkServiceProtocol {
             }
 
             urlComponents.queryItems = [
-                URLQueryItem(name: "apiKey", value: config.apiKey)
+                URLQueryItem(name: "apikey", value: config.apiKey)
             ]
 
             params.forEach { key, value in

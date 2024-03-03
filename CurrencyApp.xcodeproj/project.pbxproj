@@ -56,6 +56,12 @@
 		8DB673A62B94C4D30070ED15 /* ExchangeDataProcessProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673A52B94C4D30070ED15 /* ExchangeDataProcessProtocol.swift */; };
 		8DB673A82B94C5240070ED15 /* ExchangeDataProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673A72B94C5240070ED15 /* ExchangeDataProcess.swift */; };
 		8DB673AA2B94C5B30070ED15 /* ExchangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673A92B94C5B30070ED15 /* ExchangeService.swift */; };
+		8DB673B22B94EC570070ED15 /* MainViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673B12B94EC570070ED15 /* MainViewModelProtocol.swift */; };
+		8DB673B42B94F7D60070ED15 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673B32B94F7D60070ED15 /* MainViewModel.swift */; };
+		8DB673B62B94FCA90070ED15 /* UIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673B52B94FCA90070ED15 /* UIError.swift */; };
+		8DB673B82B94FF960070ED15 /* MockMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673B72B94FF960070ED15 /* MockMainViewModel.swift */; };
+		8DB673BB2B94FFFF0070ED15 /* Task+sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673BA2B94FFFF0070ED15 /* Task+sleep.swift */; };
+		8DB673BD2B9501D60070ED15 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673BC2B9501D60070ED15 /* MainView.swift */; };
 		8DCD9A4B2B93BDDA002810ED /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8DCD9A4A2B93BDDA002810ED /* Localizable.xcstrings */; };
 		8DCD9A502B93D293002810ED /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A4F2B93D293002810ED /* Navigator.swift */; };
 		8DCD9A522B93D2E6002810ED /* NavigationRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A512B93D2E6002810ED /* NavigationRoute.swift */; };
@@ -139,6 +145,12 @@
 		8DB673A52B94C4D30070ED15 /* ExchangeDataProcessProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDataProcessProtocol.swift; sourceTree = "<group>"; };
 		8DB673A72B94C5240070ED15 /* ExchangeDataProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDataProcess.swift; sourceTree = "<group>"; };
 		8DB673A92B94C5B30070ED15 /* ExchangeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeService.swift; sourceTree = "<group>"; };
+		8DB673B12B94EC570070ED15 /* MainViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelProtocol.swift; sourceTree = "<group>"; };
+		8DB673B32B94F7D60070ED15 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		8DB673B52B94FCA90070ED15 /* UIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIError.swift; sourceTree = "<group>"; };
+		8DB673B72B94FF960070ED15 /* MockMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMainViewModel.swift; sourceTree = "<group>"; };
+		8DB673BA2B94FFFF0070ED15 /* Task+sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+sleep.swift"; sourceTree = "<group>"; };
+		8DB673BC2B9501D60070ED15 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8DCD9A4A2B93BDDA002810ED /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		8DCD9A4F2B93D293002810ED /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		8DCD9A512B93D2E6002810ED /* NavigationRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoute.swift; sourceTree = "<group>"; };
@@ -288,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				8DB6738E2B94B7760070ED15 /* Currency.swift */,
+				8DB673B52B94FCA90070ED15 /* UIError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -295,6 +308,7 @@
 		8D370AD72B935E08006D350A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				8DB673AB2B94EAEB0070ED15 /* Main */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -327,9 +341,10 @@
 			isa = PBXGroup;
 			children = (
 				8DB673732B948B680070ED15 /* Resolver */,
+				8DB673B92B94FFE80070ED15 /* Task */,
 				8D370AED2B93981F006D350A /* Text */,
-				8D370AEA2B9397A6006D350A /* VStack */,
 				8D370AE52B9396E6006D350A /* View */,
+				8D370AEA2B9397A6006D350A /* VStack */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -355,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				8D370AEE2B93982A006D350A /* Text+build.swift */,
+				8DB673BA2B94FFFF0070ED15 /* Task+sleep.swift */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -557,6 +573,40 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		8DB673AB2B94EAEB0070ED15 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8DB673AD2B94EAFD0070ED15 /* ViewModel */,
+				8DB673AC2B94EAF80070ED15 /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8DB673AC2B94EAF80070ED15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8DB673BC2B9501D60070ED15 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8DB673AD2B94EAFD0070ED15 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8DB673B12B94EC570070ED15 /* MainViewModelProtocol.swift */,
+				8DB673B32B94F7D60070ED15 /* MainViewModel.swift */,
+				8DB673B72B94FF960070ED15 /* MockMainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8DB673B92B94FFE80070ED15 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
 		8DCD9A4C2B93D263002810ED /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -734,17 +784,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D370B0F2B93B3F4006D350A /* FlatListMocks.swift in Sources */,
+				8DB673BD2B9501D60070ED15 /* MainView.swift in Sources */,
 				8D370AEC2B9397B3006D350A /* VStack+spacing.swift in Sources */,
 				8DB6737E2B949E470070ED15 /* MockRouteManager.swift in Sources */,
 				8DCD9A502B93D293002810ED /* Navigator.swift in Sources */,
+				8DB673B22B94EC570070ED15 /* MainViewModelProtocol.swift in Sources */,
 				8DCD9A612B93EBE7002810ED /* ApiConfiguration.swift in Sources */,
 				8DB6737A2B949BF70070ED15 /* Endpoint.swift in Sources */,
 				8D370ADF2B9394EC006D350A /* CornerVariant.swift in Sources */,
 				8DCD9A592B93D805002810ED /* ExchangeScreen.swift in Sources */,
 				8DB6736F2B9486900070ED15 /* RouteManager.swift in Sources */,
 				8DB673852B94AF730070ED15 /* NetworkError.swift in Sources */,
+				8DB673B82B94FF960070ED15 /* MockMainViewModel.swift in Sources */,
 				8DB673772B948C510070ED15 /* RouteManagerProtocol.swift in Sources */,
 				8DB673942B94BA590070ED15 /* DecoderProtocol.swift in Sources */,
+				8DB673B62B94FCA90070ED15 /* UIError.swift in Sources */,
 				8D370AE72B9396F8006D350A /* View+padding.swift in Sources */,
 				8DB673832B94AA230070ED15 /* NetworkService.swift in Sources */,
 				8D370AA02B93441B006D350A /* ContentView.swift in Sources */,
@@ -774,11 +828,13 @@
 				8DB673A82B94C5240070ED15 /* ExchangeDataProcess.swift in Sources */,
 				8D370AEF2B93982A006D350A /* Text+build.swift in Sources */,
 				8DB673A42B94C4160070ED15 /* ExchangeServiceProtocol.swift in Sources */,
+				8DB673BB2B94FFFF0070ED15 /* Task+sleep.swift in Sources */,
 				8D370B012B93A02B006D350A /* AnimatedButtonViewModelProtocol.swift in Sources */,
 				8DB6739A2B94BB390070ED15 /* CurrenciesDataProcess.swift in Sources */,
 				8DB673982B94BAD70070ED15 /* CurrenciesDataProcessProtocol.swift in Sources */,
 				8DB673962B94BA790070ED15 /* Decoder.swift in Sources */,
 				8DCD9A522B93D2E6002810ED /* NavigationRoute.swift in Sources */,
+				8DB673B42B94F7D60070ED15 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
