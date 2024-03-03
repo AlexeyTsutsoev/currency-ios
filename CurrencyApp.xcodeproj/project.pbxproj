@@ -52,6 +52,11 @@
 		8DB673962B94BA790070ED15 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673952B94BA790070ED15 /* Decoder.swift */; };
 		8DB673982B94BAD70070ED15 /* CurrenciesDataProcessProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673972B94BAD70070ED15 /* CurrenciesDataProcessProtocol.swift */; };
 		8DB6739A2B94BB390070ED15 /* CurrenciesDataProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673992B94BB390070ED15 /* CurrenciesDataProcess.swift */; };
+		8DB673A22B94C3DE0070ED15 /* ExchangeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673A12B94C3DE0070ED15 /* ExchangeResponse.swift */; };
+		8DB673A42B94C4160070ED15 /* ExchangeServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673A32B94C4160070ED15 /* ExchangeServiceProtocol.swift */; };
+		8DB673A62B94C4D30070ED15 /* ExchangeDataProcessProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673A52B94C4D30070ED15 /* ExchangeDataProcessProtocol.swift */; };
+		8DB673A82B94C5240070ED15 /* ExchangeDataProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673A72B94C5240070ED15 /* ExchangeDataProcess.swift */; };
+		8DB673AA2B94C5B30070ED15 /* ExchangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673A92B94C5B30070ED15 /* ExchangeService.swift */; };
 		8DCD9A4B2B93BDDA002810ED /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8DCD9A4A2B93BDDA002810ED /* Localizable.xcstrings */; };
 		8DCD9A502B93D293002810ED /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A4F2B93D293002810ED /* Navigator.swift */; };
 		8DCD9A522B93D2E6002810ED /* NavigationRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A512B93D2E6002810ED /* NavigationRoute.swift */; };
@@ -131,6 +136,11 @@
 		8DB673952B94BA790070ED15 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
 		8DB673972B94BAD70070ED15 /* CurrenciesDataProcessProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesDataProcessProtocol.swift; sourceTree = "<group>"; };
 		8DB673992B94BB390070ED15 /* CurrenciesDataProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesDataProcess.swift; sourceTree = "<group>"; };
+		8DB673A12B94C3DE0070ED15 /* ExchangeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeResponse.swift; sourceTree = "<group>"; };
+		8DB673A32B94C4160070ED15 /* ExchangeServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeServiceProtocol.swift; sourceTree = "<group>"; };
+		8DB673A52B94C4D30070ED15 /* ExchangeDataProcessProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDataProcessProtocol.swift; sourceTree = "<group>"; };
+		8DB673A72B94C5240070ED15 /* ExchangeDataProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDataProcess.swift; sourceTree = "<group>"; };
+		8DB673A92B94C5B30070ED15 /* ExchangeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeService.swift; sourceTree = "<group>"; };
 		8DCD9A4A2B93BDDA002810ED /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		8DCD9A4F2B93D293002810ED /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		8DCD9A512B93D2E6002810ED /* NavigationRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoute.swift; sourceTree = "<group>"; };
@@ -296,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				8DB673922B94BA480070ED15 /* Decoder */,
+				8DB6739F2B94C1C10070ED15 /* ExchangeService */,
 				8DB6738B2B94B65C0070ED15 /* CurrenciesService */,
 				8DB673812B94A7900070ED15 /* Models */,
 				8DB6736C2B9486700070ED15 /* RouteManager */,
@@ -497,6 +508,7 @@
 			children = (
 				8DB673842B94AF730070ED15 /* NetworkError.swift */,
 				8DB673862B94B5180070ED15 /* CurrenciesResponse.swift */,
+				8DB673A12B94C3DE0070ED15 /* ExchangeResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -525,6 +537,25 @@
 			children = (
 				8DB6738C2B94B66F0070ED15 /* CurrenciesServiceProtocol.swift */,
 				8DB673972B94BAD70070ED15 /* CurrenciesDataProcessProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8DB6739F2B94C1C10070ED15 /* ExchangeService */ = {
+			isa = PBXGroup;
+			children = (
+				8DB673A02B94C1D10070ED15 /* Protocols */,
+				8DB673A72B94C5240070ED15 /* ExchangeDataProcess.swift */,
+				8DB673A92B94C5B30070ED15 /* ExchangeService.swift */,
+			);
+			path = ExchangeService;
+			sourceTree = "<group>";
+		};
+		8DB673A02B94C1D10070ED15 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8DB673A32B94C4160070ED15 /* ExchangeServiceProtocol.swift */,
+				8DB673A52B94C4D30070ED15 /* ExchangeDataProcessProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -721,7 +752,9 @@
 				8DB673832B94AA230070ED15 /* NetworkService.swift in Sources */,
 				8D370AA02B93441B006D350A /* ContentView.swift in Sources */,
 				8DB6736B2B94854A0070ED15 /* ApiServicesConfigProtocol.swift in Sources */,
+				8DB673AA2B94C5B30070ED15 /* ExchangeService.swift in Sources */,
 				8DCD9A542B93D3F9002810ED /* NavigatorViewModelProtocol.swift in Sources */,
+				8DB673A62B94C4D30070ED15 /* ExchangeDataProcessProtocol.swift in Sources */,
 				8DB673912B94B84B0070ED15 /* CurrenciesService.swift in Sources */,
 				8D370AE12B93956F006D350A /* FontVariant.swift in Sources */,
 				8DB673872B94B5180070ED15 /* CurrenciesResponse.swift in Sources */,
@@ -738,10 +771,13 @@
 				8D370B062B93A734006D350A /* ErrorView.swift in Sources */,
 				8DCD9A5B2B93D834002810ED /* HistoryScreen.swift in Sources */,
 				8D370AFA2B939D6A006D350A /* Typography.swift in Sources */,
+				8DB673A22B94C3DE0070ED15 /* ExchangeResponse.swift in Sources */,
 				8DCD9A572B93D598002810ED /* NavigatorViewModel.swift in Sources */,
 				8D370B092B93AB2D006D350A /* FlatList.swift in Sources */,
 				8D370AFD2B939F98006D350A /* AnimatedButton.swift in Sources */,
+				8DB673A82B94C5240070ED15 /* ExchangeDataProcess.swift in Sources */,
 				8D370AEF2B93982A006D350A /* Text+build.swift in Sources */,
+				8DB673A42B94C4160070ED15 /* ExchangeServiceProtocol.swift in Sources */,
 				8D370B012B93A02B006D350A /* AnimatedButtonViewModelProtocol.swift in Sources */,
 				8DB6739A2B94BB390070ED15 /* CurrenciesDataProcess.swift in Sources */,
 				8DB673982B94BAD70070ED15 /* CurrenciesDataProcessProtocol.swift in Sources */,

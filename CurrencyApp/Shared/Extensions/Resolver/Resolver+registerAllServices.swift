@@ -30,5 +30,13 @@ extension Resolver: ResolverRegistering {
         register(CurrenciesServiceProtocol.self) {
             CurrenciesService()
         }
+        
+        register(ExchangeDataProcessProtocol.self) {
+            ExchangeDataProcess()
+        }
+        
+        register(ExchangeServiceProtocol.self) {
+            ExchangeService()
+        }
     }
 }
