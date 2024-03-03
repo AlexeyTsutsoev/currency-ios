@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8D370A9E2B93441A006D350A /* CurrencyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D370A9D2B93441A006D350A /* CurrencyAppApp.swift */; };
 		8D370AA02B93441B006D350A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D370A9F2B93441B006D350A /* ContentView.swift */; };
-		8D370AA22B93441B006D350A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D370AA12B93441B006D350A /* Item.swift */; };
 		8D370AA42B93441B006D350A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D370AA32B93441B006D350A /* Assets.xcassets */; };
 		8D370AA72B93441B006D350A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D370AA62B93441B006D350A /* Preview Assets.xcassets */; };
 		8D370ABB2B93441B006D350A /* CurrencyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D370ABA2B93441B006D350A /* CurrencyAppUITests.swift */; };
@@ -89,7 +88,6 @@
 		8D370A9A2B93441A006D350A /* CurrencyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D370A9D2B93441A006D350A /* CurrencyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyAppApp.swift; sourceTree = "<group>"; };
 		8D370A9F2B93441B006D350A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		8D370AA12B93441B006D350A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		8D370AA32B93441B006D350A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D370AA62B93441B006D350A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D370AAC2B93441B006D350A /* CurrencyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -290,7 +288,6 @@
 			isa = PBXGroup;
 			children = (
 				8DB6738E2B94B7760070ED15 /* Currency.swift */,
-				8D370AA12B93441B006D350A /* Item.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -763,7 +760,6 @@
 				8D370AE32B93963A006D350A /* PaddingValue.swift in Sources */,
 				8D370B0C2B93AB6A006D350A /* EmptyView.swift in Sources */,
 				8DB6738F2B94B7760070ED15 /* Currency.swift in Sources */,
-				8D370AA22B93441B006D350A /* Item.swift in Sources */,
 				8D370A9E2B93441A006D350A /* CurrencyAppApp.swift in Sources */,
 				8DB6738A2B94B5960070ED15 /* NetworkServiceProtocol.swift in Sources */,
 				8DB6738D2B94B66F0070ED15 /* CurrenciesServiceProtocol.swift in Sources */,
