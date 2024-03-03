@@ -7,8 +7,9 @@ import SwiftUI
 
     // MARK: - Inits
 
-    init(modelContext: ModelContext) {
+    init(modelContext: ModelContext, onPressHistory: @escaping () -> Void) {
         self.modelContext = modelContext
+        self.onPressHistory = onPressHistory
     }
 
     // MARK: - Dependencies
@@ -35,26 +36,27 @@ import SwiftUI
 
     var baseCurrency: Currency?
 
+    var currencies: [Currency] = []
+
     var exchangeResult: [String: Double] = [:]
 
     // MARK: - Open Methods
+
+    let onPressHistory: () -> Void
 
     func loadCurrencies() async {
         do {
             hasError = false
             isLoading = true
 
-            let currencies = try await currenciesService.currencies(symbolList: symbolList)
+            let currenciesData = try await currenciesService.currencies(symbolList: symbolList)
 
-            guard let defaultCurrency = currencies.first else {
+            guard let defaultCurrency = currenciesData.first else {
                 throw UIError.unexpectedNil(fieldName: "currencies.first")
             }
 
             baseCurrency = defaultCurrency
-            currencies.forEach { currency in
-                modelContext.insert(currency)
-            }
-            try modelContext.save()
+            currencies = currenciesData
         } catch {
             print(error.localizedDescription)
             hasError = true
@@ -78,6 +80,12 @@ import SwiftUI
                 )
 
                 self.exchangeResult = exchangeData
+
+                modelContext.insert(
+                    HistoryItem(timestamp: Date(), title: baseCurrency.name, result: exchangeData)
+                )
+
+                try modelContext.save()
             } catch {
                 print(error.localizedDescription)
                 hasError = true
@@ -86,5 +94,4 @@ import SwiftUI
             isExchanging = false
         }
     }
-
 }

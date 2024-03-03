@@ -1,8 +1,11 @@
 import SwiftUI
 
 struct HistoryScreen: View {
+    @State private var searchText = ""
     var body: some View {
-        Typography("Not Implemented")
+        HistoryView(searchString: searchText)
+            .searchable(text: $searchText)
+            .navigationTitle("Exchange History")
     }
 }
 

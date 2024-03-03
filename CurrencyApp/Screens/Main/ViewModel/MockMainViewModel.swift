@@ -8,8 +8,13 @@ import Observation
     var hasError = false
 
     var baseCurrency: Currency?
+    var currencies: [Currency] = []
 
     var exchangeResult: [String: Double] = [:]
+
+    let onPressHistory: () -> Void = {
+        print("History icon pressed")
+    }
 
     func loadCurrencies() async {
         do {
@@ -19,6 +24,10 @@ import Observation
             try await Task.sleep(seconds: 2.0)
 
             baseCurrency = Currency(symbol: "RUB", name: "Russian Ruble")
+            currencies = [
+                Currency(symbol: "RUB", name: "Russian Ruble"),
+                Currency(symbol: "USD", name: "US Dollar")
+            ]
         } catch {
             hasError = true
             print(error.localizedDescription)
