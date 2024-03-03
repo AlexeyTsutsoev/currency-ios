@@ -18,5 +18,17 @@ extension Resolver: ResolverRegistering {
         register(NetworkServiceProtocol.self) {
             NetworkService()
         }
+        
+        register(DecoderProtocol.self) {
+            Decoder()
+        }
+        
+        register(CurrenciesDataProcessProtocol.self) {
+            CurrenciesDataProcess()
+        }
+        
+        register(CurrenciesServiceProtocol.self) {
+            CurrenciesService()
+        }
     }
 }
