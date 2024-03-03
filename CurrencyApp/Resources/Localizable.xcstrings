@@ -23,6 +23,17 @@
         }
       }
     },
+    "Exchange History" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Austauschhistorie"
+          }
+        }
+      }
+    },
     "List is empty." : {
       "extractionState" : "manual",
       "localizations" : {

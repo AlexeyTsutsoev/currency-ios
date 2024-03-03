@@ -5,7 +5,7 @@ import SwiftUI
 struct CurrencyAppApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Currency.self
+            HistoryItem.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 

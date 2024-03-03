@@ -1,13 +1,21 @@
-import SwiftData
+import Foundation
 
-@Model
-final class Currency {
-    @Attribute(.unique)
-    var symbol: String
-    var name: String
-
+final class Currency: Identifiable, Hashable {
     init(symbol: String, name: String) {
         self.symbol = symbol
         self.name = name
+    }
+
+    var id = UUID()
+
+    var symbol: String
+    var name: String
+
+    static func == (lhs: Currency, rhs: Currency) -> Bool {
+        lhs.symbol == rhs.symbol
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
     }
 }
