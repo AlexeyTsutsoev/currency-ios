@@ -1,14 +1,15 @@
 import Foundation
+import Resolver
 
-public final class RouteManager {
-    private let config: ApiServicesConfigProtocol = ApiConfiguration()
+public final class RouteManager: RouteManagerProtocol {
     
-    enum Path: String {
-        case currencies = "currencies"
-        case latest = "latest"
-    }
+    // MARK: - Depends
     
-    func getPath(route: Path) -> URL {
+    @Injected private var config: ApiServicesConfigProtocol
+    
+    // MARK: - Open Methods
+    
+    func getPath(route: Endpoint) -> URL {
         return config.baseUrl.appending(path: route.rawValue)
     }
 }

@@ -1,8 +1,8 @@
-//
-//  Endpoint.swift
-//  CurrencyApp
-//
-//  Created by Alexey Tsutsoev on 03.03.2024.
-//
-
-import Foundation
+/// possible endpoints for requests
+enum Endpoint: String {
+    /// route for getting currencies for exchange
+    case currencies = "currencies"
+    
+    /// route for exchange selected currencies
+    case latest = "latest"
+}
