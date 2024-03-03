@@ -1,5 +1,5 @@
 /// possible endpoints for requests
-enum Endpoint: String {
+enum Endpoint: String, CaseIterable {
     /// route for getting currencies for exchange
     case currencies = "currencies"
     

@@ -39,6 +39,8 @@
 		8DB673752B948BBF0070ED15 /* Resolver+registerAllServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673742B948BBF0070ED15 /* Resolver+registerAllServices.swift */; };
 		8DB673772B948C510070ED15 /* RouteManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673762B948C510070ED15 /* RouteManagerProtocol.swift */; };
 		8DB6737A2B949BF70070ED15 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673792B949BF70070ED15 /* Endpoint.swift */; };
+		8DB6737E2B949E470070ED15 /* MockRouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB6737D2B949E470070ED15 /* MockRouteManager.swift */; };
+		8DB673802B949F360070ED15 /* RouteManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB6737F2B949F360070ED15 /* RouteManagerTests.swift */; };
 		8DCD9A4B2B93BDDA002810ED /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8DCD9A4A2B93BDDA002810ED /* Localizable.xcstrings */; };
 		8DCD9A502B93D293002810ED /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A4F2B93D293002810ED /* Navigator.swift */; };
 		8DCD9A522B93D2E6002810ED /* NavigationRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A512B93D2E6002810ED /* NavigationRoute.swift */; };
@@ -105,6 +107,8 @@
 		8DB673742B948BBF0070ED15 /* Resolver+registerAllServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+registerAllServices.swift"; sourceTree = "<group>"; };
 		8DB673762B948C510070ED15 /* RouteManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManagerProtocol.swift; sourceTree = "<group>"; };
 		8DB673792B949BF70070ED15 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		8DB6737D2B949E470070ED15 /* MockRouteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRouteManager.swift; sourceTree = "<group>"; };
+		8DB6737F2B949F360070ED15 /* RouteManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManagerTests.swift; sourceTree = "<group>"; };
 		8DCD9A4A2B93BDDA002810ED /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		8DCD9A4F2B93D293002810ED /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		8DCD9A512B93D2E6002810ED /* NavigationRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoute.swift; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 		8D370AAF2B93441B006D350A /* CurrencyAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				8DB6737B2B949E180070ED15 /* Services */,
 				8DCD9A5C2B93DA9E002810ED /* Navigation */,
 				8D370AF02B939926006D350A /* Theme */,
 			);
@@ -402,6 +407,7 @@
 		8DB6736C2B9486700070ED15 /* RouteManager */ = {
 			isa = PBXGroup;
 			children = (
+				8DB6737C2B949E340070ED15 /* Mocks */,
 				8DCD9A602B93EBE7002810ED /* ApiConfiguration.swift */,
 				8DB6736E2B9486900070ED15 /* RouteManager.swift */,
 				8DB673782B948CAC0070ED15 /* Enums */,
@@ -440,6 +446,22 @@
 				8DB673792B949BF70070ED15 /* Endpoint.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		8DB6737B2B949E180070ED15 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8DB6737F2B949F360070ED15 /* RouteManagerTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8DB6737C2B949E340070ED15 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8DB6737D2B949E470070ED15 /* MockRouteManager.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		8DCD9A4C2B93D263002810ED /* Models */ = {
@@ -620,6 +642,7 @@
 			files = (
 				8D370B0F2B93B3F4006D350A /* FlatListMocks.swift in Sources */,
 				8D370AEC2B9397B3006D350A /* VStack+spacing.swift in Sources */,
+				8DB6737E2B949E470070ED15 /* MockRouteManager.swift in Sources */,
 				8DCD9A502B93D293002810ED /* Navigator.swift in Sources */,
 				8DCD9A612B93EBE7002810ED /* ApiConfiguration.swift in Sources */,
 				8DB6737A2B949BF70070ED15 /* Endpoint.swift in Sources */,
@@ -656,6 +679,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D370AF22B939952006D350A /* FontTests.swift in Sources */,
+				8DB673802B949F360070ED15 /* RouteManagerTests.swift in Sources */,
 				8D370AF42B939B8C006D350A /* PaddingTests.swift in Sources */,
 				8DCD9A5E2B93DADE002810ED /* NavigatorViewModelTests.swift in Sources */,
 				8D370AF62B939C47006D350A /* CornerTests.swift in Sources */,
