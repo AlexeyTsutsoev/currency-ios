@@ -1,6 +1,19 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Done" : {
+
+    },
+    "Enter amount" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Betrag eingeben"
+          }
+        }
+      }
+    },
     "Error with loading currencies" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -67,13 +80,35 @@
         }
       }
     },
-    "Select Currency" : {
+    "Result %lld" : {
       "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Währung wählen"
+            "value" : "Ergebnis %lld"
+          }
+        }
+      }
+    },
+    "Select base currency" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Basiswährung auswählen"
+          }
+        }
+      }
+    },
+    "Select target currency" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zielwährung auswählen"
           }
         }
       }

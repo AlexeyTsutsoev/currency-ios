@@ -5,9 +5,9 @@ import SwiftData
 final class HistoryItem: Identifiable {
     var timestamp: Date
     var title: String
-    var result: [String: Double]
+    var result: Double
 
-    init(timestamp: Date, title: String, result: [String: Double]) {
+    init(timestamp: Date, title: String, result: Double) {
         self.timestamp = timestamp
         self.title = title
         self.result = result

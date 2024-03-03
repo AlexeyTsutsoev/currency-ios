@@ -26,6 +26,8 @@ import SwiftUI
 
     private let modelContext: ModelContext
 
+    private var lastChange = Date()
+
     // MARK: - Fields
 
     var isLoading = false
@@ -35,16 +37,44 @@ import SwiftUI
     var hasError = false
 
     var baseCurrency: Currency?
+    var targetCurrency: Currency?
+
+    var amount = "1.0"
 
     var currencies: [Currency] = []
 
-    var exchangeResult: [String: Double] = [:]
+    var exchangeResult: Double = 0.0
+
+    // MARK: - Private Methods
+
+    /// simple ceche logic
+    private func shouldPreventLoading() -> Bool {
+        if currencies.isEmpty {
+            return false
+        }
+
+        guard
+            let difference = Calendar.current.dateComponents(
+                [.minute],
+                from: lastChange,
+                to: Date.now
+            ).minute
+        else {
+            return false
+        }
+
+        return difference < 5
+    }
 
     // MARK: - Open Methods
 
     let onPressHistory: () -> Void
 
     func loadCurrencies() async {
+        if shouldPreventLoading() {
+            return
+        }
+
         do {
             hasError = false
             isLoading = true
@@ -56,7 +86,9 @@ import SwiftUI
             }
 
             baseCurrency = defaultCurrency
+            targetCurrency = defaultCurrency
             currencies = currenciesData
+            lastChange = Date()
         } catch {
             print(error.localizedDescription)
             hasError = true
@@ -67,7 +99,9 @@ import SwiftUI
     func exchange() {
         Task {
             do {
-                guard let baseCurrency = self.baseCurrency else {
+                guard let baseCurrency = self.baseCurrency,
+                    let targetCurrency = self.targetCurrency
+                else {
                     throw UIError.unexpectedNil(fieldName: "baseCurrency")
                 }
 
@@ -76,13 +110,23 @@ import SwiftUI
 
                 let exchangeData = try await exchangeService.result(
                     baseCurrency: baseCurrency.symbol,
-                    currencies: symbolList
+                    currencies: [targetCurrency.symbol]
                 )
 
-                self.exchangeResult = exchangeData
+                guard let resultData = exchangeData[targetCurrency.symbol] else {
+                    throw UIError.unexpectedNil(fieldName: "exchangeData")
+                }
+
+                guard let doubleAmount = Double(self.amount) else {
+                    throw UIError.unexpectedNil(fieldName: "doubleAmount")
+                }
+
+                let result = resultData * doubleAmount
+
+                self.exchangeResult = resultData * doubleAmount
 
                 modelContext.insert(
-                    HistoryItem(timestamp: Date(), title: baseCurrency.name, result: exchangeData)
+                    HistoryItem(timestamp: Date(), title: baseCurrency.name, result: result)
                 )
 
                 try modelContext.save()
