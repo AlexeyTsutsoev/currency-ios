@@ -2,6 +2,9 @@ import Foundation
 import Resolver
 
 extension Resolver: ResolverRegistering {
+
+    // MARK: - Base API Dependencies
+
     public static func registerAllServices() {
         register(ApiServicesConfigProtocol.self) {
             ApiConfiguration()
@@ -23,6 +26,8 @@ extension Resolver: ResolverRegistering {
             Decoder()
         }
 
+        // MARK: - Currencies API
+
         register(CurrenciesDataProcessProtocol.self) {
             CurrenciesDataProcess()
         }
@@ -30,6 +35,8 @@ extension Resolver: ResolverRegistering {
         register(CurrenciesServiceProtocol.self) {
             CurrenciesService()
         }
+
+        // MARK: - Exchange API
 
         register(ExchangeDataProcessProtocol.self) {
             ExchangeDataProcess()
