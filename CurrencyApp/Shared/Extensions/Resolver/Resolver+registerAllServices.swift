@@ -2,10 +2,10 @@ import Foundation
 import Resolver
 
 extension Resolver: ResolverRegistering {
-
-    // MARK: - Base API Dependencies
-
     public static func registerAllServices() {
+
+        // MARK: - Base API Dependencies
+
         register(ApiServicesConfigProtocol.self) {
             ApiConfiguration()
         }
