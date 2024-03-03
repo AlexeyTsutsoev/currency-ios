@@ -1,4 +1,5 @@
 import Resolver
+import Foundation
 
 extension Resolver: ResolverRegistering {
     public static func registerAllServices() {
@@ -8,6 +9,14 @@ extension Resolver: ResolverRegistering {
         
         register(RouteManagerProtocol.self) {
             RouteManager()
+        }
+        
+        register(URLSession.self) {
+            URLSession(configuration: .default)
+        }
+        
+        register(NetworkServiceProtocol.self) {
+            NetworkService()
         }
     }
 }
