@@ -33,6 +33,30 @@
 		8D370B092B93AB2D006D350A /* FlatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D370B082B93AB2D006D350A /* FlatList.swift */; };
 		8D370B0C2B93AB6A006D350A /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D370B0B2B93AB6A006D350A /* EmptyView.swift */; };
 		8D370B0F2B93B3F4006D350A /* FlatListMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D370B0E2B93B3F4006D350A /* FlatListMocks.swift */; };
+		8DB6736B2B94854A0070ED15 /* ApiServicesConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB6736A2B94854A0070ED15 /* ApiServicesConfigProtocol.swift */; };
+		8DB6736F2B9486900070ED15 /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB6736E2B9486900070ED15 /* RouteManager.swift */; };
+		8DB673722B948B440070ED15 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 8DB673712B948B440070ED15 /* Resolver */; };
+		8DB673752B948BBF0070ED15 /* Resolver+registerAllServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673742B948BBF0070ED15 /* Resolver+registerAllServices.swift */; };
+		8DB673772B948C510070ED15 /* RouteManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673762B948C510070ED15 /* RouteManagerProtocol.swift */; };
+		8DB6737A2B949BF70070ED15 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673792B949BF70070ED15 /* Endpoint.swift */; };
+		8DB6737E2B949E470070ED15 /* MockRouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB6737D2B949E470070ED15 /* MockRouteManager.swift */; };
+		8DB673802B949F360070ED15 /* RouteManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB6737F2B949F360070ED15 /* RouteManagerTests.swift */; };
+		8DB673832B94AA230070ED15 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673822B94AA230070ED15 /* NetworkService.swift */; };
+		8DB673852B94AF730070ED15 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673842B94AF730070ED15 /* NetworkError.swift */; };
+		8DB673872B94B5180070ED15 /* CurrenciesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673862B94B5180070ED15 /* CurrenciesResponse.swift */; };
+		8DB6738A2B94B5960070ED15 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673892B94B5960070ED15 /* NetworkServiceProtocol.swift */; };
+		8DB6738D2B94B66F0070ED15 /* CurrenciesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB6738C2B94B66F0070ED15 /* CurrenciesServiceProtocol.swift */; };
+		8DB6738F2B94B7760070ED15 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB6738E2B94B7760070ED15 /* Currency.swift */; };
+		8DB673912B94B84B0070ED15 /* CurrenciesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673902B94B84B0070ED15 /* CurrenciesService.swift */; };
+		8DB673942B94BA590070ED15 /* DecoderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673932B94BA590070ED15 /* DecoderProtocol.swift */; };
+		8DB673962B94BA790070ED15 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673952B94BA790070ED15 /* Decoder.swift */; };
+		8DB673982B94BAD70070ED15 /* CurrenciesDataProcessProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673972B94BAD70070ED15 /* CurrenciesDataProcessProtocol.swift */; };
+		8DB6739A2B94BB390070ED15 /* CurrenciesDataProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673992B94BB390070ED15 /* CurrenciesDataProcess.swift */; };
+		8DB673A22B94C3DE0070ED15 /* ExchangeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673A12B94C3DE0070ED15 /* ExchangeResponse.swift */; };
+		8DB673A42B94C4160070ED15 /* ExchangeServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673A32B94C4160070ED15 /* ExchangeServiceProtocol.swift */; };
+		8DB673A62B94C4D30070ED15 /* ExchangeDataProcessProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673A52B94C4D30070ED15 /* ExchangeDataProcessProtocol.swift */; };
+		8DB673A82B94C5240070ED15 /* ExchangeDataProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673A72B94C5240070ED15 /* ExchangeDataProcess.swift */; };
+		8DB673AA2B94C5B30070ED15 /* ExchangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB673A92B94C5B30070ED15 /* ExchangeService.swift */; };
 		8DCD9A4B2B93BDDA002810ED /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8DCD9A4A2B93BDDA002810ED /* Localizable.xcstrings */; };
 		8DCD9A502B93D293002810ED /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A4F2B93D293002810ED /* Navigator.swift */; };
 		8DCD9A522B93D2E6002810ED /* NavigationRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A512B93D2E6002810ED /* NavigationRoute.swift */; };
@@ -41,6 +65,7 @@
 		8DCD9A592B93D805002810ED /* ExchangeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A582B93D805002810ED /* ExchangeScreen.swift */; };
 		8DCD9A5B2B93D834002810ED /* HistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A5A2B93D834002810ED /* HistoryScreen.swift */; };
 		8DCD9A5E2B93DADE002810ED /* NavigatorViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A5D2B93DADE002810ED /* NavigatorViewModelTests.swift */; };
+		8DCD9A612B93EBE7002810ED /* ApiConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD9A602B93EBE7002810ED /* ApiConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +118,29 @@
 		8D370B082B93AB2D006D350A /* FlatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatList.swift; sourceTree = "<group>"; };
 		8D370B0B2B93AB6A006D350A /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		8D370B0E2B93B3F4006D350A /* FlatListMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatListMocks.swift; sourceTree = "<group>"; };
+		8DB6736A2B94854A0070ED15 /* ApiServicesConfigProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServicesConfigProtocol.swift; sourceTree = "<group>"; };
+		8DB6736E2B9486900070ED15 /* RouteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
+		8DB673742B948BBF0070ED15 /* Resolver+registerAllServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+registerAllServices.swift"; sourceTree = "<group>"; };
+		8DB673762B948C510070ED15 /* RouteManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManagerProtocol.swift; sourceTree = "<group>"; };
+		8DB673792B949BF70070ED15 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		8DB6737D2B949E470070ED15 /* MockRouteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRouteManager.swift; sourceTree = "<group>"; };
+		8DB6737F2B949F360070ED15 /* RouteManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManagerTests.swift; sourceTree = "<group>"; };
+		8DB673822B94AA230070ED15 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		8DB673842B94AF730070ED15 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		8DB673862B94B5180070ED15 /* CurrenciesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesResponse.swift; sourceTree = "<group>"; };
+		8DB673892B94B5960070ED15 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		8DB6738C2B94B66F0070ED15 /* CurrenciesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesServiceProtocol.swift; sourceTree = "<group>"; };
+		8DB6738E2B94B7760070ED15 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		8DB673902B94B84B0070ED15 /* CurrenciesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesService.swift; sourceTree = "<group>"; };
+		8DB673932B94BA590070ED15 /* DecoderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderProtocol.swift; sourceTree = "<group>"; };
+		8DB673952B94BA790070ED15 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		8DB673972B94BAD70070ED15 /* CurrenciesDataProcessProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesDataProcessProtocol.swift; sourceTree = "<group>"; };
+		8DB673992B94BB390070ED15 /* CurrenciesDataProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesDataProcess.swift; sourceTree = "<group>"; };
+		8DB673A12B94C3DE0070ED15 /* ExchangeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeResponse.swift; sourceTree = "<group>"; };
+		8DB673A32B94C4160070ED15 /* ExchangeServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeServiceProtocol.swift; sourceTree = "<group>"; };
+		8DB673A52B94C4D30070ED15 /* ExchangeDataProcessProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDataProcessProtocol.swift; sourceTree = "<group>"; };
+		8DB673A72B94C5240070ED15 /* ExchangeDataProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDataProcess.swift; sourceTree = "<group>"; };
+		8DB673A92B94C5B30070ED15 /* ExchangeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeService.swift; sourceTree = "<group>"; };
 		8DCD9A4A2B93BDDA002810ED /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		8DCD9A4F2B93D293002810ED /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		8DCD9A512B93D2E6002810ED /* NavigationRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoute.swift; sourceTree = "<group>"; };
@@ -101,6 +149,8 @@
 		8DCD9A582B93D805002810ED /* ExchangeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeScreen.swift; sourceTree = "<group>"; };
 		8DCD9A5A2B93D834002810ED /* HistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
 		8DCD9A5D2B93DADE002810ED /* NavigatorViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorViewModelTests.swift; sourceTree = "<group>"; };
+		8DCD9A5F2B93E79A002810ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DCD9A602B93EBE7002810ED /* ApiConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB673722B948B440070ED15 /* Resolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +188,7 @@
 				8D370AAF2B93441B006D350A /* CurrencyAppTests */,
 				8D370AB92B93441B006D350A /* CurrencyAppUITests */,
 				8D370A9B2B93441A006D350A /* Products */,
+				8DB673702B948B440070ED15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,7 +209,6 @@
 				8D370AD72B935E08006D350A /* Screens */,
 				8D370AD12B935954006D350A /* Application */,
 				8D370AD42B935A10006D350A /* Navigation */,
-				8D370AA52B93441B006D350A /* Preview Content */,
 				8D370AD32B935982006D350A /* Resources */,
 				8D370AD22B93597B006D350A /* Shared */,
 			);
@@ -175,6 +226,7 @@
 		8D370AAF2B93441B006D350A /* CurrencyAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				8DB6737B2B949E180070ED15 /* Services */,
 				8DCD9A5C2B93DA9E002810ED /* Navigation */,
 				8D370AF02B939926006D350A /* Theme */,
 			);
@@ -193,6 +245,7 @@
 		8D370AD12B935954006D350A /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				8DCD9A5F2B93E79A002810ED /* Info.plist */,
 				8D370ACF2B935339006D350A /* .swiftlint.yml */,
 				8D370A9D2B93441A006D350A /* CurrencyAppApp.swift */,
 				8D370A9F2B93441B006D350A /* ContentView.swift */,
@@ -214,6 +267,7 @@
 		8D370AD32B935982006D350A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8D370AA52B93441B006D350A /* Preview Content */,
 				8D370AA32B93441B006D350A /* Assets.xcassets */,
 				8D370ADC2B939175006D350A /* Colors.xcassets */,
 				8DCD9A4A2B93BDDA002810ED /* Localizable.xcstrings */,
@@ -236,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				8D370AA12B93441B006D350A /* Item.swift */,
+				8DB6738E2B94B7760070ED15 /* Currency.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -250,6 +305,13 @@
 		8D370AD82B935FA5006D350A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8DB673922B94BA480070ED15 /* Decoder */,
+				8DB6739F2B94C1C10070ED15 /* ExchangeService */,
+				8DB6738B2B94B65C0070ED15 /* CurrenciesService */,
+				8DB673812B94A7900070ED15 /* Models */,
+				8DB6736C2B9486700070ED15 /* RouteManager */,
+				8DB673822B94AA230070ED15 /* NetworkService.swift */,
+				8DB673892B94B5960070ED15 /* NetworkServiceProtocol.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -267,6 +329,7 @@
 		8D370AE42B9396C3006D350A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8DB673732B948B680070ED15 /* Resolver */,
 				8D370AED2B93981F006D350A /* Text */,
 				8D370AEA2B9397A6006D350A /* VStack */,
 				8D370AE52B9396E6006D350A /* View */,
@@ -380,6 +443,123 @@
 			path = EmptyView;
 			sourceTree = "<group>";
 		};
+		8DB6736C2B9486700070ED15 /* RouteManager */ = {
+			isa = PBXGroup;
+			children = (
+				8DB6737C2B949E340070ED15 /* Mocks */,
+				8DCD9A602B93EBE7002810ED /* ApiConfiguration.swift */,
+				8DB6736E2B9486900070ED15 /* RouteManager.swift */,
+				8DB673782B948CAC0070ED15 /* Enums */,
+				8DB6736D2B94867A0070ED15 /* Protocols */,
+			);
+			path = RouteManager;
+			sourceTree = "<group>";
+		};
+		8DB6736D2B94867A0070ED15 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8DB6736A2B94854A0070ED15 /* ApiServicesConfigProtocol.swift */,
+				8DB673762B948C510070ED15 /* RouteManagerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8DB673702B948B440070ED15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DB673732B948B680070ED15 /* Resolver */ = {
+			isa = PBXGroup;
+			children = (
+				8DB673742B948BBF0070ED15 /* Resolver+registerAllServices.swift */,
+			);
+			path = Resolver;
+			sourceTree = "<group>";
+		};
+		8DB673782B948CAC0070ED15 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				8DB673792B949BF70070ED15 /* Endpoint.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		8DB6737B2B949E180070ED15 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8DB6737F2B949F360070ED15 /* RouteManagerTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8DB6737C2B949E340070ED15 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8DB6737D2B949E470070ED15 /* MockRouteManager.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		8DB673812B94A7900070ED15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8DB673842B94AF730070ED15 /* NetworkError.swift */,
+				8DB673862B94B5180070ED15 /* CurrenciesResponse.swift */,
+				8DB673A12B94C3DE0070ED15 /* ExchangeResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8DB6738B2B94B65C0070ED15 /* CurrenciesService */ = {
+			isa = PBXGroup;
+			children = (
+				8DB6739E2B94C1340070ED15 /* Protocols */,
+				8DB673902B94B84B0070ED15 /* CurrenciesService.swift */,
+				8DB673992B94BB390070ED15 /* CurrenciesDataProcess.swift */,
+			);
+			path = CurrenciesService;
+			sourceTree = "<group>";
+		};
+		8DB673922B94BA480070ED15 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				8DB673932B94BA590070ED15 /* DecoderProtocol.swift */,
+				8DB673952B94BA790070ED15 /* Decoder.swift */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
+		8DB6739E2B94C1340070ED15 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8DB6738C2B94B66F0070ED15 /* CurrenciesServiceProtocol.swift */,
+				8DB673972B94BAD70070ED15 /* CurrenciesDataProcessProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8DB6739F2B94C1C10070ED15 /* ExchangeService */ = {
+			isa = PBXGroup;
+			children = (
+				8DB673A02B94C1D10070ED15 /* Protocols */,
+				8DB673A72B94C5240070ED15 /* ExchangeDataProcess.swift */,
+				8DB673A92B94C5B30070ED15 /* ExchangeService.swift */,
+			);
+			path = ExchangeService;
+			sourceTree = "<group>";
+		};
+		8DB673A02B94C1D10070ED15 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8DB673A32B94C4160070ED15 /* ExchangeServiceProtocol.swift */,
+				8DB673A52B94C4D30070ED15 /* ExchangeDataProcessProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		8DCD9A4C2B93D263002810ED /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -431,6 +611,9 @@
 				8D370ACE2B9352BA006D350A /* PBXTargetDependency */,
 			);
 			name = CurrencyApp;
+			packageProductDependencies = (
+				8DB673712B948B440070ED15 /* Resolver */,
+			);
 			productName = CurrencyApp;
 			productReference = 8D370A9A2B93441A006D350A /* CurrencyApp.app */;
 			productType = "com.apple.product-type.application";
@@ -555,27 +738,50 @@
 			files = (
 				8D370B0F2B93B3F4006D350A /* FlatListMocks.swift in Sources */,
 				8D370AEC2B9397B3006D350A /* VStack+spacing.swift in Sources */,
+				8DB6737E2B949E470070ED15 /* MockRouteManager.swift in Sources */,
 				8DCD9A502B93D293002810ED /* Navigator.swift in Sources */,
+				8DCD9A612B93EBE7002810ED /* ApiConfiguration.swift in Sources */,
+				8DB6737A2B949BF70070ED15 /* Endpoint.swift in Sources */,
 				8D370ADF2B9394EC006D350A /* CornerVariant.swift in Sources */,
 				8DCD9A592B93D805002810ED /* ExchangeScreen.swift in Sources */,
+				8DB6736F2B9486900070ED15 /* RouteManager.swift in Sources */,
+				8DB673852B94AF730070ED15 /* NetworkError.swift in Sources */,
+				8DB673772B948C510070ED15 /* RouteManagerProtocol.swift in Sources */,
+				8DB673942B94BA590070ED15 /* DecoderProtocol.swift in Sources */,
 				8D370AE72B9396F8006D350A /* View+padding.swift in Sources */,
+				8DB673832B94AA230070ED15 /* NetworkService.swift in Sources */,
 				8D370AA02B93441B006D350A /* ContentView.swift in Sources */,
+				8DB6736B2B94854A0070ED15 /* ApiServicesConfigProtocol.swift in Sources */,
+				8DB673AA2B94C5B30070ED15 /* ExchangeService.swift in Sources */,
 				8DCD9A542B93D3F9002810ED /* NavigatorViewModelProtocol.swift in Sources */,
+				8DB673A62B94C4D30070ED15 /* ExchangeDataProcessProtocol.swift in Sources */,
+				8DB673912B94B84B0070ED15 /* CurrenciesService.swift in Sources */,
 				8D370AE12B93956F006D350A /* FontVariant.swift in Sources */,
+				8DB673872B94B5180070ED15 /* CurrenciesResponse.swift in Sources */,
+				8DB673752B948BBF0070ED15 /* Resolver+registerAllServices.swift in Sources */,
 				8D370B032B93A102006D350A /* AnimatedButtonViewModel.swift in Sources */,
 				8D370AE32B93963A006D350A /* PaddingValue.swift in Sources */,
 				8D370B0C2B93AB6A006D350A /* EmptyView.swift in Sources */,
+				8DB6738F2B94B7760070ED15 /* Currency.swift in Sources */,
 				8D370AA22B93441B006D350A /* Item.swift in Sources */,
 				8D370A9E2B93441A006D350A /* CurrencyAppApp.swift in Sources */,
+				8DB6738A2B94B5960070ED15 /* NetworkServiceProtocol.swift in Sources */,
+				8DB6738D2B94B66F0070ED15 /* CurrenciesServiceProtocol.swift in Sources */,
 				8D370AE92B939734006D350A /* View+fill.swift in Sources */,
 				8D370B062B93A734006D350A /* ErrorView.swift in Sources */,
 				8DCD9A5B2B93D834002810ED /* HistoryScreen.swift in Sources */,
 				8D370AFA2B939D6A006D350A /* Typography.swift in Sources */,
+				8DB673A22B94C3DE0070ED15 /* ExchangeResponse.swift in Sources */,
 				8DCD9A572B93D598002810ED /* NavigatorViewModel.swift in Sources */,
 				8D370B092B93AB2D006D350A /* FlatList.swift in Sources */,
 				8D370AFD2B939F98006D350A /* AnimatedButton.swift in Sources */,
+				8DB673A82B94C5240070ED15 /* ExchangeDataProcess.swift in Sources */,
 				8D370AEF2B93982A006D350A /* Text+build.swift in Sources */,
+				8DB673A42B94C4160070ED15 /* ExchangeServiceProtocol.swift in Sources */,
 				8D370B012B93A02B006D350A /* AnimatedButtonViewModelProtocol.swift in Sources */,
+				8DB6739A2B94BB390070ED15 /* CurrenciesDataProcess.swift in Sources */,
+				8DB673982B94BAD70070ED15 /* CurrenciesDataProcessProtocol.swift in Sources */,
+				8DB673962B94BA790070ED15 /* Decoder.swift in Sources */,
 				8DCD9A522B93D2E6002810ED /* NavigationRoute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,6 +791,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D370AF22B939952006D350A /* FontTests.swift in Sources */,
+				8DB673802B949F360070ED15 /* RouteManagerTests.swift in Sources */,
 				8D370AF42B939B8C006D350A /* PaddingTests.swift in Sources */,
 				8DCD9A5E2B93DADE002810ED /* NavigatorViewModelTests.swift in Sources */,
 				8D370AF62B939C47006D350A /* CornerTests.swift in Sources */,
@@ -742,13 +949,17 @@
 		8D370AC12B93441B006D350A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_KEY = fca_live_4LuU3I3wCTk8DhwbQJAVRceISqONM2mNs5kLgvCy;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_API_URL = "https://api.freecurrencyapi.com/v1";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CurrencyApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CurrencyApp/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CurrencyApp/Application/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -770,13 +981,17 @@
 		8D370AC22B93441B006D350A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_KEY = fca_live_4LuU3I3wCTk8DhwbQJAVRceISqONM2mNs5kLgvCy;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_API_URL = "https://api.freecurrencyapi.com/v1";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CurrencyApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CurrencyApp/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CurrencyApp/Application/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -935,6 +1150,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8D370ACB2B935266006D350A /* XCRemoteSwiftPackageReference "SwiftLint" */;
 			productName = "plugin:SwiftLintPlugin";
+		};
+		8DB673712B948B440070ED15 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D370AD02B935415006D350A /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
