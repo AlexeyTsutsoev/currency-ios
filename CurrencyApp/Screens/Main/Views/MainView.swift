@@ -2,15 +2,25 @@ import SwiftData
 import SwiftUI
 
 struct MainView: View {
+
+    // MARK: - States
+
     @State private var mainVM: MainViewModelProtocol
     @Query private var currencies: [Currency]
+
+    // MARK: - Inits
 
     init(mainVM: MainViewModelProtocol) {
         self._mainVM = State(initialValue: mainVM)
     }
 
+    // MARK: - Renders
+
     var body: some View {
         VStack {
+
+            // MARK: Checks
+
             if mainVM.isLoading {
                 ProgressView()
             } else if mainVM.hasError {
@@ -24,6 +34,9 @@ struct MainView: View {
                     isLoading: mainVM.isLoading
                 )
             } else {
+
+                // MARK: Main Layout
+
                 Form {
                     if mainVM.baseCurrency != nil {
                         Picker(selection: $mainVM.baseCurrency) {
@@ -62,6 +75,9 @@ struct MainView: View {
         .task {
             await mainVM.loadCurrencies()
         }
+
+        // MARK: Navigation Setup
+
         .navigationTitle("Exchange")
         .navigationBarTitleDisplayMode(.large)
         .toolbar {
@@ -74,6 +90,8 @@ struct MainView: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     NavigationStack {

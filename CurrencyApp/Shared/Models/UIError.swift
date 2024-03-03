@@ -1,6 +1,7 @@
 import Foundation
 
 enum UIError: Error {
+    /// error when some propertie must not be nil, but it is
     case unexpectedNil(fieldName: String)
 
     var localizedDescription: String {
