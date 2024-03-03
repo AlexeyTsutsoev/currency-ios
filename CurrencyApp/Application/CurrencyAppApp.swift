@@ -1,18 +1,11 @@
-//
-//  CurrencyAppApp.swift
-//  CurrencyApp
-//
-//  Created by Alexey Tsutsoev on 02.03.2024.
-//
-
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 @main
 struct CurrencyAppApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Currency.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 

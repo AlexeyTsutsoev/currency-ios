@@ -1,22 +1,24 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Add Item" : {
+    "Error with loading currencies" : {
+      "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Artikel hinzufügen"
+            "value" : "Fehler beim Laden von Währungen"
           }
         }
       }
     },
-    "Item at %@" : {
+    "Exchange" : {
+      "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Artikel bei %@"
+            "value" : "Austausch"
           }
         }
       }
@@ -54,12 +56,24 @@
         }
       }
     },
-    "Select an item" : {
+    "Select Currency" : {
+      "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wählen Sie einen Artikel aus"
+            "value" : "Währung wählen"
+          }
+        }
+      }
+    },
+    "There are no selected currencies" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es sind keine Währungen ausgewählt"
           }
         }
       }

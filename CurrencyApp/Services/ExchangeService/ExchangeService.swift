@@ -13,11 +13,11 @@ class ExchangeService: ExchangeServiceProtocol {
     func result(baseCurrency: String, currencies: [String]) async throws -> [String: Double] {
         let params = [
             "currencies": currencies.joined(separator: ","),
-            "base_currency": baseCurrency,
+            "base_currency": baseCurrency
         ]
 
         let (data, _) = try await networkService.getRequest(
-            endpoint: .currencies,
+            endpoint: .latest,
             params: params
         )
 
